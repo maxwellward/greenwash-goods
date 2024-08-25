@@ -13,11 +13,11 @@
     </div>
     <!-- Blog Cards -->
     <div class="flex justify-center my-12">
-      <div v-if="!hasLoadedAllPosts">
+      <!-- <div v-if="!hasLoadedAllPosts">
         <c-spinner class="mt-32" />
-      </div>
+      </div> -->
       <div
-        v-else-if="posts.length === 0"
+        v-if="posts.length === 0"
         class="text-type-primary flex flex-col items-center mt-12 space-y-1.5"
       >
         <FaceFrownIcon class="size-6" />
@@ -43,7 +43,7 @@ import { FaceFrownIcon } from "@heroicons/vue/24/outline";
 const blogStore = useBlogStore();
 
 onMounted(() => {
-  blogStore.loadPosts();
+  //blogStore.loadPosts();
 });
 
 const posts = computed(() => blogStore.getPosts());
