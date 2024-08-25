@@ -37,6 +37,6 @@ defineProps<{
   description: string;
   price: number;
   disclaimer: string;
-  tag: string;
+  tag?: string;
 }>();
 </script>

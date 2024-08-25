@@ -8,8 +8,8 @@
       on the internet your credit card information? No. It's not. Check out our
       pricing and plans below and see what works best for your situation.
     </h2>
-    <div class="flex mt-12 gap-8">
-      <plan-card v-for="plan in plans" :key="plan.title" v-bind="plan" />
+    <div class="flex mt-12 gap-8 flex-col md:flex-row">
+      <plan-card v-for="plan in plans" :key="plan.name" v-bind="plan" />
     </div>
   </div>
 </template>
