@@ -20,7 +20,6 @@ WORKDIR /app
 
 # Copy the built files from the build stage
 COPY --from=build /app/dist /app
-COPY .env /app
 
 # Expose the port that serve will run on
 EXPOSE 5001
